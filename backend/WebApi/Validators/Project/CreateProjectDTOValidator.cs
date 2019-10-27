@@ -14,7 +14,7 @@ namespace WebApi.Validators.Project
                 .MinimumLength(3)
                     .WithMessage("Project's name should be minimum 3 chars long")
                 .MaximumLength(15)
-                    .WithMessage("Project's name should be maximum 3 chars long");
+                    .WithMessage("Project's name should be maximum 15 chars long");
 
             RuleFor(p => p.Deadline)
                 .GreaterThan(System.DateTime.Now)
